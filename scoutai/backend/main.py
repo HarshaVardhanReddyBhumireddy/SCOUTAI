@@ -45,10 +45,20 @@ def root():
 def parse_jd_endpoint(req: JDRequest):
     try:
         parsed = parse_jd(req.jd_text)
-        return {"success": True, "data": parsed}
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
 
+        # ✅ ALWAYS RETURN VALID JSON
+        return {
+            "success": True,
+            "data": parsed or {}   # 🔥 prevent None
+        }
+
+    except Exception as e:
+        print("ERROR:", str(e))   # 🔥 log error
+        return {
+            "success": False,
+            "data": {},
+            "error": str(e)
+        }
 
 @app.post("/api/match-candidates")
 def match_candidates_endpoint(req: JDRequest):

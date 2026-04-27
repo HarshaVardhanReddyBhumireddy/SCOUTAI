@@ -7,7 +7,7 @@ export const api = {
   parseJD: (jdText) =>
   axios.post(`${BASE_URL}/api/parse-jd`, {
     jd_text: jdText
-  }),   
+  }), 
 
   // ✅ Get candidates
   matchCandidates: (jdText) =>

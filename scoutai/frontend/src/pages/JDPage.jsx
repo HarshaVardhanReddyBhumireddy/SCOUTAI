@@ -25,21 +25,23 @@ export default function JDPage({
   try {
     const res = await api.parseJD(jdText);
 
-    // 🔥 SAFE PARSING
-    if (!res || !res.data || !res.data.data) {
-      throw new Error("Invalid API response");
+    console.log("API RESPONSE:", res); // 🔥 debug
+
+    const parsed = res?.data?.data;
+
+    if (!parsed) {
+      throw new Error("Empty or invalid response");
     }
 
-    setParsedJD(res.data.data);
+    setParsedJD(parsed);
 
   } catch (e) {
     console.error("JD Parse Error:", e);
-    setError("Backend failed or returned empty response");
+    setError("Backend returned empty or invalid response");
   } finally {
     setLoading(false);
   }
 };
-
   const handleFindCandidates = () => {
     if (parsedJD) onNext();
   };
