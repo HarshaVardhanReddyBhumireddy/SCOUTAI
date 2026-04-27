@@ -17,29 +17,26 @@ export default function JDPage({
 
   // ✅ Analyze JD
   const handleAnalyze = async () => {
-  if (!jdText.trim()) return;
-
-  setLoading(true);
-  setError(null);
-
   try {
-    const res = await api.parseJD(jdText);
+    const res = await fetch(API.PARSE_JD, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ jd_text: jdText }),
+    });
 
-    console.log("API RESPONSE:", res); // 🔥 debug
+    const data = await res.json();
 
-    const parsed = res?.data?.data;
-
-    if (!parsed) {
-      throw new Error("Empty or invalid response");
+    if (!data.success) {
+      throw new Error(data.error || "API failed");
     }
 
-    setParsedJD(parsed);
+    setParsedJD(data.data);
 
-  } catch (e) {
-    console.error("JD Parse Error:", e);
-    setError("Backend returned empty or invalid response");
-  } finally {
-    setLoading(false);
+  } catch (err) {
+    console.error("JD Parse Error:", err);
+    alert("Failed to parse JD");
   }
 };
   const handleFindCandidates = () => {

@@ -2,12 +2,9 @@ import axios from "axios";
 
 const BASE_URL = "https://scoutai-backend-dohj.onrender.com";
 
-export const api = {
-  // ✅ Parse JD
-  parseJD: (jdText) =>
-  axios.post(`${BASE_URL}/api/parse-jd`, {
-    jd_text: jdText
-  }), 
+export const API = {
+  PARSE_JD: `${BASE_URL}/api/parse-jd`,   // ✅ IMPORTANT
+};
 
   // ✅ Get candidates
   matchCandidates: (jdText) =>
