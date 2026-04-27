@@ -17,24 +17,28 @@ export default function JDPage({
 
   // ✅ Analyze JD
   const handleAnalyze = async () => {
-    if (!jdText.trim()) return;
+  if (!jdText.trim()) return;
 
-    setLoading(true);
-    setError(null);
+  setLoading(true);
+  setError(null);
 
-    try {
-      const res = await api.parseJD(jdText);
+  try {
+    const res = await api.parseJD(jdText);
 
-      // ✅ IMPORTANT FIX (nested response)
-      const data = res?.data?.data || {};
-      setParsedJD(data);
-    } catch (e) {
-      console.error("JD Parse Error:", e);
-      setError("Failed to analyze JD. Please try again.");
-    } finally {
-      setLoading(false);
+    // 🔥 SAFE PARSING
+    if (!res || !res.data || !res.data.data) {
+      throw new Error("Invalid API response");
     }
-  };
+
+    setParsedJD(res.data.data);
+
+  } catch (e) {
+    console.error("JD Parse Error:", e);
+    setError("Backend failed or returned empty response");
+  } finally {
+    setLoading(false);
+  }
+};
 
   const handleFindCandidates = () => {
     if (parsedJD) onNext();

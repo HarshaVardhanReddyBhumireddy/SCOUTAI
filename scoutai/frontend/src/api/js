@@ -5,9 +5,9 @@ const BASE_URL = "https://scoutai-backend-dohj.onrender.com";
 export const api = {
   // ✅ Parse JD
   parseJD: (jdText) =>
-    axios.post(`${BASE_URL}/api/parse-jd`, {
-      jd_text: jdText, // ✅ IMPORTANT FIX
-    }),
+  axios.post(`${BASE_URL}/api/parse-jd`, {
+    jd_text: jdText
+  }),   
 
   // ✅ Get candidates
   matchCandidates: (jdText) =>
