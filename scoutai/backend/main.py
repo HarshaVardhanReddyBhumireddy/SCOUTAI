@@ -2,9 +2,8 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import Optional
+from backend.jd_parser import parse_jd
 import uvicorn
-
-from jd_parser import parse_jd
 from candidate_db import CANDIDATES
 from matcher import match_candidates
 from outreach import simulate_outreach
