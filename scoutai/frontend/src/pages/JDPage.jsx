@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { api } from "../utils/api";
+import { API } from "../api";
 import { SectionHeading, SkillChip, LoadingSpinner } from "../components/UI";
 
 const SAMPLE_JD = `We are looking for a Senior Machine Learning Engineer with 5+ years of experience. Must have: Python, PyTorch, NLP, model deployment. Nice to have: MLOps, Kubernetes, LLM fine-tuning, Hugging Face. The role involves building production NLP pipelines and working closely with the product team in a fast-growing AI startup.`;
