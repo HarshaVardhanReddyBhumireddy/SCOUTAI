@@ -1,9 +1,27 @@
+import axios from "axios";
+
 const BASE_URL = "https://scoutai-backend-dohj.onrender.com";
 
-export const API = {
-  PARSE_JD: `${BASE_URL}/api/parse-jd`,
-  GET_CANDIDATES: `${BASE_URL}/api/match-candidates`,
-  OUTREACH: `${BASE_URL}/api/simulate-outreach`,
+export const api = {
+  // ✅ Parse JD
+  parseJD: (jdText) =>
+    axios.post(`${BASE_URL}/api/parse-jd`, {
+      jd_text: jdText, // ✅ IMPORTANT FIX
+    }),
+
+  // ✅ Get candidates
+  matchCandidates: (jdText) =>
+    axios.post(`${BASE_URL}/api/match-candidates`, {
+      jd_text: jdText,
+    }),
+
+  // ✅ Outreach simulation
+  simulateOutreach: (candidateId, jdText, matchScore) =>
+    axios.post(`${BASE_URL}/api/simulate-outreach`, {
+      candidate_id: candidateId,
+      jd_text: jdText,
+      match_score: matchScore,
+    }),
 };
 
 export default BASE_URL;
