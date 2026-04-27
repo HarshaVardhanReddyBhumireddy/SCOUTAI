@@ -1,0 +1,217 @@
+{
+  "job_description": "We are looking for a Senior Machine Learning Engineer with 5+ years of experience. Must have: Python, PyTorch, NLP, model deployment. Nice to have: MLOps, Kubernetes, LLM fine-tuning, Hugging Face. The role involves building production NLP pipelines and working closely with the product team.",
+  "parsed_jd": {
+    "role": "Senior Machine Learning Engineer",
+    "min_experience": 5,
+    "seniority": "Senior",
+    "domain": "AI/ML",
+    "must_skills": ["Python", "PyTorch", "NLP", "model deployment"],
+    "nice_skills": ["MLOps", "Kubernetes", "LLM fine-tuning", "Hugging Face"]
+  },
+  "discovery_summary": {
+    "total_candidates_scored": 22,
+    "top_matches_returned": 10,
+    "average_match_score": 67.3,
+    "immediate_availability": 6
+  },
+  "outreach_summary": {
+    "candidates_contacted": 5,
+    "conversations_generated": 5,
+    "average_interest_score": 62.4,
+    "high_interest_count": 2
+  },
+  "ranked_shortlist": [
+    {
+      "rank": 1,
+      "candidate_id": 1,
+      "name": "Priya Sharma",
+      "title": "Senior ML Engineer",
+      "years_experience": 6,
+      "location": "Bangalore, India",
+      "education": "M.Tech, IIT Bombay",
+      "skills": ["Python", "PyTorch", "NLP", "MLOps", "Hugging Face", "FastAPI", "Docker"],
+      "availability": "immediate",
+      "match_score": 92.5,
+      "interest_score": 88,
+      "combined_score": 90.7,
+      "match_reasons": [
+        "Matches required skills: Python, PyTorch, NLP",
+        "Has preferred skills: MLOps, Hugging Face",
+        "6 years experience (min 5 required)",
+        "Domain expertise: AI/ML"
+      ],
+      "interest_signals": [
+        "Actively job searching",
+        "Available immediately",
+        "Asked about growth opportunities",
+        "Self-reported high interest (9/10)"
+      ],
+      "personality": "enthusiastic",
+      "conversation_excerpt": [
+        {
+          "role": "agent",
+          "content": "Hi Priya! I came across your profile and I'm excited to reach out. We have a Senior ML Engineer role that matches your background in Python, PyTorch, NLP. Are you open to exploring?"
+        },
+        {
+          "role": "candidate",
+          "content": "Absolutely! This sounds really interesting. I've been actively looking for opportunities that leverage my NLP experience. Tell me more about the role!"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "candidate_id": 5,
+      "name": "Mohammed Al-Rashid",
+      "title": "AI Research Engineer",
+      "years_experience": 7,
+      "location": "Boston, USA",
+      "education": "PhD Natural Language Processing, CMU",
+      "skills": ["Python", "PyTorch", "NLP", "LLM fine-tuning", "RLHF", "Hugging Face", "CUDA"],
+      "availability": "1 month",
+      "match_score": 89.0,
+      "interest_score": 88,
+      "combined_score": 88.6,
+      "match_reasons": [
+        "Matches required: Python, PyTorch, NLP, LLM fine-tuning",
+        "Has preferred: Hugging Face",
+        "7 years experience (min 5 required)",
+        "Domain expertise: AI Research"
+      ],
+      "interest_signals": [
+        "Actively job searching",
+        "Mentioned immediate availability",
+        "Asked about technical challenges",
+        "High self-reported interest"
+      ],
+      "personality": "enthusiastic",
+      "conversation_excerpt": [
+        {
+          "role": "agent",
+          "content": "Hi Mohammed! Your PhD in NLP and work on LLM fine-tuning caught my attention. We're building production NLP pipelines. Interested?"
+        },
+        {
+          "role": "candidate",
+          "content": "Very interested! I've been looking for opportunities to apply my research to production systems. What's the scale of the NLP pipelines?"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "candidate_id": 3,
+      "name": "Rahul Verma",
+      "title": "NLP Engineer",
+      "years_experience": 4,
+      "location": "Hyderabad, India",
+      "education": "B.Tech, NIT Warangal",
+      "skills": ["Python", "PyTorch", "NLP", "BERT", "Transformers", "spaCy", "FastAPI"],
+      "availability": "immediate",
+      "match_score": 85.0,
+      "interest_score": 88,
+      "combined_score": 86.2,
+      "match_reasons": [
+        "Matches required: Python, PyTorch, NLP",
+        "4 years experience (below 5 min)",
+        "Domain expertise: NLP",
+        "Available immediately"
+      ],
+      "interest_signals": [
+        "Actively job searching",
+        "Available immediately",
+        "Asked about team structure",
+        "High self-reported interest (9/10)"
+      ],
+      "personality": "enthusiastic",
+      "conversation_excerpt": [
+        {
+          "role": "agent",
+          "content": "Hi Rahul! Your specialization in transformer architectures is impressive. We need someone for production NLP work. Open to chat?"
+        },
+        {
+          "role": "candidate",
+          "content": "Definitely! I'm actively exploring new opportunities. The production NLP focus aligns perfectly with my experience. What's the tech stack?"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "candidate_id": 15,
+      "name": "Meera Krishnan",
+      "title": "Generative AI Lead",
+      "years_experience": 6,
+      "location": "Bangalore, India",
+      "education": "MS AI, IISc Bangalore",
+      "skills": ["Python", "LLM fine-tuning", "Hugging Face", "LangChain", "RLHF", "PyTorch", "NLP"],
+      "availability": "immediate",
+      "match_score": 87.0,
+      "interest_score": 52,
+      "combined_score": 73.0,
+      "match_reasons": [
+        "Matches required: Python, PyTorch, NLP, LLM fine-tuning",
+        "Has preferred: Hugging Face",
+        "6 years experience (min 5 required)"
+      ],
+      "interest_signals": [
+        "Passively open to opportunities",
+        "Asked about compensation",
+        "Inquired about company culture",
+        "Non-committal on interview process"
+      ],
+      "personality": "neutral",
+      "conversation_excerpt": [
+        {
+          "role": "agent",
+          "content": "Hello Meera, your work on enterprise copilots is impressive. We have a Senior ML Engineer position. Are you open to a quick chat?"
+        },
+        {
+          "role": "candidate",
+          "content": "Hi, thanks for reaching out. I'm not actively searching, but I'm open to hearing more. What's the compensation range?"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "candidate_id": 10,
+      "name": "Divya Menon",
+      "title": "Applied Scientist",
+      "years_experience": 5,
+      "location": "Chennai, India",
+      "education": "M.Tech AI, IIT Madras",
+      "skills": ["Python", "NLP", "Hugging Face", "AWS", "SageMaker", "PyTorch", "model deployment"],
+      "availability": "1 month",
+      "match_score": 84.0,
+      "interest_score": 52,
+      "combined_score": 71.2,
+      "match_reasons": [
+        "Matches required: Python, NLP, PyTorch, model deployment",
+        "Has preferred: Hugging Face",
+        "5 years experience (min 5 required)"
+      ],
+      "interest_signals": [
+        "Passively open",
+        "Asked for more company details",
+        "Delayed availability (1 month)",
+        "Moderate interest level"
+      ],
+      "personality": "neutral",
+      "conversation_excerpt": [
+        {
+          "role": "agent",
+          "content": "Hi Divya! Your experience deploying NLP on AWS SageMaker aligns well with our needs. Interested in learning more?"
+        },
+        {
+          "role": "candidate",
+          "content": "Hi, I could be interested. I'd want to understand more about the team and tech challenges before committing. What's the company size?"
+        }
+      ]
+    }
+  ],
+  "scoring_weights": {
+    "match_weight": 0.6,
+    "interest_weight": 0.4
+  },
+  "metadata": {
+    "timestamp": "2025-04-26T14:30:00Z",
+    "processing_time_seconds": 12.4,
+    "api_version": "1.0.0"
+  }
+}
