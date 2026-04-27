@@ -1,8 +1,22 @@
 from typing import List, Dict
 import math
-from jd_parser import SKILL_ALIASES
+try:
+    from jd_parser import parse_jd
+except Exception as e:
+    print("ERROR jd_parser:", e)
+    def parse_jd(x): return {}
 
+try:
+    from matcher import match_candidates
+except Exception as e:
+    print("ERROR matcher:", e)
+    def match_candidates(a, b): return []
 
+try:
+    from scorer import build_shortlist
+except Exception as e:
+    print("ERROR scorer:", e)
+    def build_shortlist(a, b, c): return []
 def get_skill_similarity(skill1: str, skill2: str) -> float:
     """
     Calculate similarity between two skills using multiple strategies.
